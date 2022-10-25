@@ -66,3 +66,28 @@
     margin-top: 0.5rem;
     margin-bottom:  0.5rem;
   }
+
+  #fonts {
+    font-family: Arial;
+    font-size: 1.5rem;
+  }
+
+  #mtfonts {
+    font-family: Arial;
+    font-size: 5rem;
+  }
+  
+  #subfonts {
+    font-family: Arial;
+    font-size: 2.5rem;
+  }
+
+  #smallfonts {
+    font-family: Arial;
+    font-size: 1.3rem;
+  }
+
+  #tfonts {
+    font-family: Arial;
+    font-size: 1rem;
+  }
