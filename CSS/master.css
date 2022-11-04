@@ -9,7 +9,9 @@
 
   a:hover {
     color: red; /* set the text color to red here */
-    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+    text-decoration: underline; /* This means we do not want hyperlinks to be underlined */
+    font-size: 1.5rem
+
   }
 
   body {
@@ -90,4 +92,16 @@
   #tfonts {
     font-family: Arial;
     font-size: 1rem;
+  }
+
+  #buttons {
+    height: 1.5rem;
+  }
+
+  #Inputbox {
+    height: 1.5rem;
+  }
+
+  #biggerInputbox {
+    height: 5rem;
   }
