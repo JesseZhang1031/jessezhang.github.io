@@ -1,18 +1,19 @@
-function validate() 
-{
-     if( document.getElementById("fname").value.length == 0 ) {
-     alert( "Please enter your first name!" );
+function validate() {
+            
+    if( document.ordForm.fname.value.length<1 ) {
+        alert( "Please enter your first name!" );
+        return false;
     }
-
-    if( document.getElementById("lname").value.length == 0 ) {
-     alert( "Please enter your last name!" );
+    if(( document.ordForm.lname.value < 1) ||
+        (document.ordForm.lname.value > 150)) {
+        alert( "Please enter your last name!" );
+        return false;
     }
-
-    if( document.getElementById("emailAddr").value.length == 0 ) {
-     alert( "Please enter your Email!" );
+    if (( document.ordForm.emailAddr.value.length < 4) ||
+        (document.ordForm.emailAddr.value.indexOf("@"))>
+        (document.ordForm.emailAddr.value.indexOf("."))){
+        alert( "Please enter your email!" );
+        return false;                  
+        }
+    return true;
     }
-
-    if( (document.getElementById("emailAddr").value.length >= 1 ) & ( document.getElementById("lname").value.length >= 1 ) & ( document.getElementById("emailAddr").value.length >= 1 )){
-        alert( "Thank you! I will contact you back as soon as possible." );
-       }
-}
